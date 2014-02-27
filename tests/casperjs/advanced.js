@@ -14,8 +14,8 @@ casper.test.begin('add & remove todos', 5, function suite(test) {
 
     // add new todo
     casper.then(function() {
-        this.sendKeys('#new-todo', 'casperjs', {keepFocus: true});
-        this.sendKeys('#new-todo', casper.page.event.key.Enter , {keepFocus: false});
+        this.sendKeys('#new-todo', 'casperjs');
+        this.sendKeys('#new-todo', casper.page.event.key.Enter);
     });
 
     casper.then(function() {
@@ -25,8 +25,8 @@ casper.test.begin('add & remove todos', 5, function suite(test) {
 
     // add new todo
     casper.then(function() {
-        this.sendKeys('#new-todo', 'testing', {keepFocus: true});
-        this.sendKeys('#new-todo', casper.page.event.key.Enter , {keepFocus: false});
+        this.sendKeys('#new-todo', 'testing');
+        this.sendKeys('#new-todo', casper.page.event.key.Enter);
     });
 
     casper.then(function() {

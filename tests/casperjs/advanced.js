@@ -20,7 +20,6 @@ casper.test.begin('add & remove todos', 5, function suite(test) {
 
     casper.then(function() {
         links = this.evaluate(getTodos);
-        this.echo(links.length);
         test.assert((links.length === 1), 'list should have 1 element');
     });
 

@@ -1,0 +1,16 @@
+{
+  "name": "Testing_Casperjs",
+  "version": "0.0.0",
+  "description": "",
+  "scripts": {
+    "test": "grunt test"
+  },
+  "author": "Kentaro Wakayama",
+  "license": "BSD",
+  "devDependencies": {
+    "grunt": "~0.4.2",
+    "grunt-contrib-watch": "~0.5.3",
+    "grunt-contrib-jshint": "~0.8.0",
+    "grunt-casperjs": "~1.4.0"
+  }
+}

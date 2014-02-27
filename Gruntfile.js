@@ -53,4 +53,6 @@ module.exports = function(grunt) {
   // Default task.
   grunt.registerTask('default', ['jshint']);
 
+  grunt.registerTask('test', ['casperjs', 'watch']);
+
 };

@@ -31,7 +31,9 @@ module.exports = function(grunt) {
         tasks: ['jshint:gruntfile']
       },
       test: {
-        files: ['tests/**/*.js'],
+        files: [
+          'tests/**/*.js'
+        ],
         tasks: ['casperjs']
       }
     },
@@ -41,7 +43,11 @@ module.exports = function(grunt) {
             parallel: false
         }
       },
-      files: ['tests/casperjs/**/*.js']
+      files: [
+        'tests/casperjs/basic.js',
+        'tests/casperjs/advanced.js',
+        'tests/**/*.js'
+      ]
     },
   });
 
